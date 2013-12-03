@@ -1,0 +1,65 @@
+#body{
+	width:100%;
+	height:100%;
+	
+}
+#topGame{
+	position:relative;
+	width:100%;
+	height:10%;
+	
+	
+}
+#tableGame {
+	position:relative;
+	width: 100%;
+	height: 90%;
+	
+}
+
+
+
+.card {
+	-webkit-perspective: 1000;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.5s;
+		 
+}
+
+.face {
+	width: 100%;
+	height: 100%;	
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.5s linear, z-index 0.25s linear;	
+}
+.font {
+	z-index:10;
+	-webkit-transform: rotateY(-180deg);
+}
+.back{
+	
+	
+	z-index:8;	
+}
+.flip{
+-webkit-transform: rotateY(-180deg);
+}
+
+.flip .font{
+z-index:8;
+}
+.flip .back{
+z-index:10;
+}
+.match{
+	opacity:0;
+}
+/**
+.match .font{
+z-index:8;
+}
+.motch .back{
+	-webkit-transform:none;
+z-index:10;
+}**/
